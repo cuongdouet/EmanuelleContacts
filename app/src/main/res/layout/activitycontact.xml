@@ -94,8 +94,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
-                            <ImageView android:id="@android:id/icon"
-
+                            <ImageView
                                 android:layout_height="46dp"
                                 android:layout_width="40dp"
                                 android:scaleType="centerCrop"
@@ -129,8 +128,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
-                            <ImageView android:id="@android:id/icon"
-
+                            <ImageView
                                 android:layout_height="match_parent"
                                 android:layout_width="40dp"
                                 android:scaleType="centerCrop"
@@ -156,9 +154,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" >
 
-                            <ImageView android:id="@android:id/icon"
-
-                                android:layout_height="match_parent"
+                            <ImageView android:layout_height="match_parent"
                                 android:layout_width="40dp"
                                 android:scaleType="centerCrop"
                                 android:src="@android:drawable/ic_menu_mapmode"/>

@@ -3,13 +3,13 @@ package com.emanuelle.easycontacts.ui;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
-import android.support.v7.widget.SearchView;
+import androidx.appcompat.widget.SearchView;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -88,7 +88,7 @@ public class List_ContactsActivity extends AppCompatActivity implements SearchVi
         super.onResume();
         update();
 
-        SharedPreferences myPrefs = this.getSharedPreferences("myPrefs", MODE_WORLD_READABLE);
+        SharedPreferences myPrefs = this.getSharedPreferences("myPrefs", MODE_PRIVATE);
         flagOrder = myPrefs.getInt("flagOrder",0);
 
         if (flagOrder == 1)  {
