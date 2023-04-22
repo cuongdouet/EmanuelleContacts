@@ -1,12 +1,13 @@
 <resources>
-    <string name="title_activity_maps">Map</string>
-    <string name="app_name1">Contatos</string>
-    <string name="menu_contacts_list">Adicionar Contato</string>
-    <string name="menu_face">Perfil</string>
-    <string name="no_contacts_found">Contatos não encontrados</string>
-    <string name="noinstall">WhatsApp não instaldo.</string>
-    <string name="msg_noinstall">Parece que o WhatsApp não está instalado no seu dispostivo.</string>
-    <string name="facebook_app_id">1109514805802666</string>
-    <string name="fb_login_protocol_scheme">fb1109514805802666</string>
+  <string name="title_activity_maps">Bản đồ</string>
+  <string name="app_name">Danh bạ</string>
+  <string name="menu_contacts_list">Liên hệ bổ sung</string>
+  <string name="menu_face">Hoàn thành</string>
+  <string name="no_contacts_found">Không mâu thuẫn</string>
+  <string name="noinstall">WhatsApp không được cài đặt.</string>
+  <string name="msg_noinstall">Thật không may, WhatsApp không được cài đặt trên thiết bị di động của bạn.</string>
+
+  <string name="facebook_app_id" translatable="false">1109514805802666</string>
+  <string name="fb_login_protocol_scheme" translatable="false">fb1109514805802666</string>
 
 </resources>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2013 The Android Open Source Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,185 +19,185 @@
 -->
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <ImageView
+      android:id="@+id/contact_image"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="45"
+      android:contentDescription="Profile Picture"
+      android:scaleType="centerCrop"
+      android:src="@drawable/ic_contact_picture_holo_light_large" />
 
     <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="55"
+      android:orientation="vertical">
+
+      <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="100">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/contact_image"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="45"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_contact_picture_holo_light_large"
-            android:contentDescription="Profile Picture"/>
+        <RelativeLayout
+          android:id="@+id/add_contact_edits"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="280dp"
+          android:orientation="vertical"
+          android:paddingBottom="16dp">
 
-        <LinearLayout
+          <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="55"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="1">
 
-                <RelativeLayout
-                    android:id="@+id/add_contact_edits"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="16dp"
-                    android:orientation="vertical"
-                    android:minHeight="280dp">
+              <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.08"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_my_calendar" />
 
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/linearLayout">
+              <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="15dp" />
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:weightSum="1">
+              <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nome"
+                android:inputType="textPersonName" />
+            </LinearLayout>
 
-                            <ImageView
-                                android:layout_height="match_parent"
-                                android:layout_width="40dp"
-                                android:scaleType="centerCrop"
-                                android:src="@android:drawable/ic_menu_my_calendar"
-                                android:layout_weight="0.08" />
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
 
-                            <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:minWidth="15dp" />
+              <ImageView
+                android:layout_width="40dp"
+                android:layout_height="46dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_call" />
 
-                            <EditText
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:inputType="textPersonName"
-                                android:ems="10"
-                                android:id="@+id/editTextName"
-                                android:hint="Nome" />
-                        </LinearLayout>
+              <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="20dp" />
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+              <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Telefone"
+                android:inputType="phone" />
 
-                            <ImageView
-                                android:layout_height="46dp"
-                                android:layout_width="40dp"
-                                android:scaleType="centerCrop"
-                                android:src="@android:drawable/ic_menu_call"/>
+              <Button
+                android:id="@+id/button2"
+                android:layout_width="38dp"
 
-                            <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:minWidth="20dp" />
+                android:layout_height="39dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/wpp" />
+            </LinearLayout>
 
-                            <EditText
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:inputType="phone"
-                                android:ems="10"
-                                android:id="@+id/editTextPhone"
-                                android:hint="Telefone" />
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
 
-                            <Button
-                                android:layout_height="39dp"
-                                android:layout_width="38dp"
+              <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/sym_action_email" />
 
-                                android:id="@+id/button2"
-                                android:background="@drawable/wpp"
-                                android:layout_alignParentTop="true"
-                                android:layout_centerHorizontal="true" />
-                        </LinearLayout>
+              <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="22dp" />
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+              <EditText
+                android:id="@+id/editTextMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
 
-                            <ImageView
-                                android:layout_height="match_parent"
-                                android:layout_width="40dp"
-                                android:scaleType="centerCrop"
-                                android:src="@android:drawable/sym_action_email"/>
+            </LinearLayout>
 
-                            <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:minWidth="22dp" />
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
 
-                            <EditText
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:inputType="textEmailAddress"
-                                android:ems="10"
-                                android:id="@+id/editTextMail"
-                                android:hint="Email" />
+              <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_mapmode" />
 
-                        </LinearLayout>
+              <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="20dp" />
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+              <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Endereço"
+                android:inputType="textEmailAddress" />
 
-                            <ImageView android:layout_height="match_parent"
-                                android:layout_width="40dp"
-                                android:scaleType="centerCrop"
-                                android:src="@android:drawable/ic_menu_mapmode"/>
+              <Button
+                android:id="@+id/button3"
+                android:layout_width="34dp"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/map"
+                android:clickable="false"
+                android:enabled="true"
+                android:text=" " />
 
-                            <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:minWidth="20dp" />
+            </LinearLayout>
 
-                            <EditText
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:inputType="textEmailAddress"
-                                android:ems="10"
-                                android:id="@+id/editTextAddress"
-                                android:hint="Endereço" />
+          </LinearLayout>
 
-                            <Button
-                                android:layout_width="34dp"
-                                android:layout_height="33dp"
-                                android:text=" "
-                                android:id="@+id/button3"
-                                android:layout_alignParentTop="true"
-                                android:layout_centerHorizontal="true"
-                                android:background="@drawable/map"
-                                android:clickable="false"
-                                android:enabled="true" />
+          <Space
+            android:layout_width="match_parent"
+            android:layout_height="70px" />
 
-                        </LinearLayout>
+        </RelativeLayout>
 
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="70px" />
-
-                </RelativeLayout>
-
-            </ScrollView>
-
-        </LinearLayout>
+      </ScrollView>
 
     </LinearLayout>
 
+  </LinearLayout>
 
 
 </FrameLayout>

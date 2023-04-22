@@ -1,0 +1,9 @@
+<resources>
+  <string name="title_activity_maps">Map</string>
+  <string name="app_name">Contatos</string>
+  <string name="menu_contacts_list">Adicionar Contato</string>
+  <string name="menu_face">Perfil</string>
+  <string name="no_contacts_found">Contatos não encontrados</string>
+  <string name="noinstall">WhatsApp não instaldo.</string>
+  <string name="msg_noinstall">Parece que o WhatsApp não está instalado no seu dispostivo.</string>
+</resources>
